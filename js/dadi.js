@@ -10,6 +10,17 @@ Consigli del giorno:
 3. si ma noi cosa vogliamo fare?
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
-
+*/
 
 //! Esercizio DADI: 
+
+var numbers = ['1', '2', '3', '4', '5', '6'];
+
+
+
+var playerNumber = Math.floor(Math.random(numbers));
+console.log('scelta cpu: ' playerNumber);
+
+
+var cpuNumber = Math.floor(Math.random(numbers));
+console.log('scelta cpu: 'cpuNumber);
