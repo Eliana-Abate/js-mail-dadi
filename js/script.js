@@ -16,3 +16,13 @@ Consigli del giorno:
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 */
+
+
+//! Esercizio MAIL: 
+
+var email = ['alfa@gmail.com', 'beta@gmail.com', 'gamma@gmail.com', 'delta@gmail.com', 'sigma@gmail.com', 'omega@gmail.com'];
+console.table(email);
+
+var userEmail = prompt('Effettua l\'accesso con l\'email registrata')
+console.log(userEmail);
+
