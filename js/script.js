@@ -26,11 +26,22 @@ console.table(email);
 var userEmail = prompt('Effettua l\'accesso con l\'email registrata')
 console.log('Utente loggato: ', userEmail);
 
-if (userEmail !== email) {
-    alert('Email non valida o non registrata');
-} else {
-    alert('Accesso effettuato');
+var emailSigned = false;
+
+for (var i = 0; i < email.length; i++) {
+    if (userEmail == email[i]) {
+        emailSigned = true;  
+    }
 }
 
-var message = document.getElementById('welcome');
-message.innerHTML = 'Benvenuto ' + userEmail;
+if (emailSigned) {
+    alert('Accesso effettuato');
+    var message = document.getElementById('welcome');
+    message.innerHTML = 'Benvenuto ' + userEmail;
+} else {
+    alert('Accesso non effettuato');
+}
+
+
+
+
