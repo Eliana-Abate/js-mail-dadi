@@ -27,7 +27,7 @@ if (emailSigned) {
     var message = document.getElementById('welcome');
     message.innerHTML = 'Benvenuto ' + userEmail;
 } else {
-    alert('Accesso non effettuato');
+    alert('Email non valida o non registrata');
 }
 
 
