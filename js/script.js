@@ -24,5 +24,13 @@ var email = ['alfa@gmail.com', 'beta@gmail.com', 'gamma@gmail.com', 'delta@gmail
 console.table(email);
 
 var userEmail = prompt('Effettua l\'accesso con l\'email registrata')
-console.log(userEmail);
+console.log('Utente loggato: ', userEmail);
 
+if (userEmail !== email) {
+    alert('Email non valida o non registrata');
+} else {
+    alert('Accesso effettuato');
+}
+
+var message = document.getElementById('welcome');
+message.innerHTML = 'Benvenuto ' + userEmail;
