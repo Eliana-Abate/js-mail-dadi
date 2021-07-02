@@ -19,8 +19,8 @@ var numbers = ['1', '2', '3', '4', '5', '6'];
 
 
 var playerNumber = Math.floor(Math.random(numbers));
-console.log('scelta cpu: ' playerNumber);
+console.log('scelta player: ', playerNumber);
 
 
 var cpuNumber = Math.floor(Math.random(numbers));
-console.log('scelta cpu: 'cpuNumber);
+console.log('scelta cpu: ', cpuNumber);
