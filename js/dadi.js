@@ -15,12 +15,13 @@ Consigli del giorno:
 //! Esercizio DADI: 
 
 var numbers = ['1', '2', '3', '4', '5', '6'];
+console.log(numbers.length);
 
 
 
-var playerNumber = Math.floor(Math.random() * numbers.length);
+var playerNumber = Math.floor(Math.random() * numbers.length) + 1;
 console.log('scelta player: ', playerNumber);
 
 
-var cpuNumber = Math.floor(Math.random() * numbers.length);
+var cpuNumber = Math.floor(Math.random() * numbers.length) + 1;
 console.log('scelta cpu: ', cpuNumber);
