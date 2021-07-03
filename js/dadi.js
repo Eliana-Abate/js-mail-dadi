@@ -27,10 +27,10 @@ console.log('scelta cpu: ', cpuNumber);
 
 //Display message
 var dadoPlayer = document.getElementById('player');
-dadoPlayer.innerHTML = 'Il tuo dado ha sorteggiato il numero: ' + playerNumber
+dadoPlayer.innerHTML = playerNumber
 
 var dadoCpu = document.getElementById('computer');
-dadoCpu.innerHTML = 'Il dado del tuo avversario ha sorteggiato il numero: ' + cpuNumber;
+dadoCpu.innerHTML = cpuNumber;
 
 var message = document.getElementById('message');
 
