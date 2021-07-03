@@ -14,14 +14,34 @@ Consigli del giorno:
 
 //! Esercizio DADI: 
 
+//Variabili
 var numbers = ['1', '2', '3', '4', '5', '6'];
 console.log(numbers.length);
-
-
 
 var playerNumber = Math.floor(Math.random() * numbers.length) + 1;
 console.log('scelta player: ', playerNumber);
 
-
 var cpuNumber = Math.floor(Math.random() * numbers.length) + 1;
 console.log('scelta cpu: ', cpuNumber);
+
+
+//Display message
+var dadoPlayer = document.getElementById('player');
+dadoPlayer.innerHTML = 'Il tuo dado ha sorteggiato il numero: ' + playerNumber
+
+var dadoCpu = document.getElementById('computer');
+dadoCpu.innerHTML = 'Il dado del tuo avversario ha sorteggiato il numero: ' + cpuNumber;
+
+var message = document.getElementById('message');
+
+
+//Conditions
+if (playerNumber > cpuNumber) {
+    message.innerHTML = 'Hai vinto!';
+
+} else if (playerNumber < cpuNumber) {
+    message.innerHTML = 'Hai perso!';
+    
+} else {
+    message.innerHTML = 'Pareggio!';
+}
