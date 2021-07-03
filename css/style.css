@@ -1,0 +1,53 @@
+
+body {
+    color: white;
+}
+
+header {
+    background-color: #000;
+}
+
+
+header h1 {
+    font-size: 3em;
+}
+
+#caesar {
+    max-width: 150px;
+}
+
+.caesar-font {
+    font-family: 'Caesar Dressing', cursive;
+}
+
+#dice-logo {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+main {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background-image: url(../img/dice-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-size: 2.5em;
+}
+
+.message-par{
+    font-size: 0.7em;
+}
+
+#player, #computer, #message {
+   font-size: 1.8em;
+}
+
+#player, #message {
+    color: rgb(240, 225, 13);
+} 
+
+
+footer {
+    background-color: black;
+}
